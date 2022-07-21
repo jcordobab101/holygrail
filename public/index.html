@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail Full Stack Application</title>
+     <!-- styles -->
+     <link rel="stylesheet" href="../css/styles.css">
+     
+     <!-- superagent for  http calls -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/superagent/3.8.3/superagent.min.js"></script>    
+ 
+     <!-- don't use this in production: -->
+     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <span id="root"></span>
+
+
+    <!-- we will put our teact component inside this div -->
+    
+
+    <!-- load react -->
+    <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- load our react component. -->
+    <script src="./components/header.js" defer type="text/babel"></script>    
+    <script src="./components/left.js" defer type="text/babel"></script>
+    <script src="./components/article.js" defer type="text/babel"></script>
+    <script src="./components/right.js" defer type="text/babel"></script>
+    <script src="./components/footer.js" defer type="text/babel"></script>    
+    <script src="app.js" defer type="text/babel"></script>
+    
+</body>
+</html>
